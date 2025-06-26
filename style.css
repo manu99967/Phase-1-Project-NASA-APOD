@@ -1,0 +1,89 @@
+/* Dark theme base styles */
+body {
+  background-color: #0b0c10;
+  color: #c5c6c7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Page header */
+h1 {
+  color: #66fcf1;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Control buttons and input */
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button, input[type="date"] {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #45a29e;
+  color: #0b0c10;
+  transition: background 0.3s ease;
+}
+
+button:hover, input[type="date"]:hover {
+  background: #66fcf1;
+}
+
+/* Image styling */
+#apod-image {
+  max-width: 100%;
+  border-radius: 8px;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 0 10px #45a29e;
+}
+
+/* Title and explanation text */
+#apod-title {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #45a29e;
+}
+
+#apod-date {
+  text-align: center;
+  font-weight: bold;
+  color: #1f2833;
+}
+
+#apod-explanation {
+  background-color: #1f2833;
+  padding: 15px;
+  border-radius: 8px;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+
+/* Like button styling */
+#like-button {
+  background-color: #ff4757;
+  color: white;
+}
+
+#like-button.liked {
+  background-color: #ffa502;
+  color: black;
+}
+
+#likes-count {
+  margin-left: 8px;
+  font-weight: bold;
+  color: #ffa502;
+}
